@@ -1,0 +1,13 @@
+node_modules/
+.chrome-versions/
+.header-recorder-ca/
+profiles/*
+!profiles/.gitkeep
+*.pcap
+*.jsonl
+/header-recorder
+/header-recorder.exe
+__pycache__/
+*.pyc
+**/.DS_Store
+*.har

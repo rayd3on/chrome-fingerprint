@@ -1,0 +1,25 @@
+{
+  "name": "chrome-fingerprint",
+  "version": "1.0.0",
+  "description": "Capture Chrome TLS fingerprints and HTTP request header ordering",
+  "main": "capture.js",
+  "bin": {
+    "chrome-fingerprint": "capture.js"
+  },
+  "scripts": {
+    "capture": "node capture.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "chrome",
+    "tls",
+    "fingerprint",
+    "ja3",
+    "header-order",
+    "browser-profile"
+  ],
+  "license": "MIT"
+}
