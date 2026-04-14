@@ -51,6 +51,7 @@ async function ensureRecorderBinary() {
     if (!fs.existsSync(path.join(root, 'go.mod'))) continue;
     if (!fs.existsSync(path.join(root, 'go', 'main.go'))) continue;
 
+    console.log('  Building Go recorder (first run may take ~60s)...');
     const build = runCapture('go', ['build', '-o', binary, './go'], { cwd: root, timeout: 120000 });
     if (build.ok && fs.existsSync(binary)) return binary;
     console.error(`  Failed to build header recorder: ${(build.stderr || build.error?.message || 'go build failed').trim()}`);
